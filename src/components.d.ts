@@ -7,6 +7,16 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface PpAmbulanceWlApp {
+        "ambulanceId": string;
+        /**
+         * @deprecated use camelCase instead. Support for dash-casing will be removed in Stencil v5.
+         */
+        "ambulance-id"?: string;
+        "apiBase": string;
+        /**
+         * @deprecated use camelCase instead. Support for dash-casing will be removed in Stencil v5.
+         */
+        "api-base"?: string;
         "basePath": string;
         /**
          * @deprecated use camelCase instead. Support for dash-casing will be removed in Stencil v5.
@@ -21,6 +31,16 @@ export namespace Components {
         "entry-id"?: string;
     }
     interface PpAmbulanceWlList {
+        "ambulanceId": string;
+        /**
+         * @deprecated use camelCase instead. Support for dash-casing will be removed in Stencil v5.
+         */
+        "ambulance-id"?: string;
+        "apiBase": string;
+        /**
+         * @deprecated use camelCase instead. Support for dash-casing will be removed in Stencil v5.
+         */
+        "api-base"?: string;
     }
 }
 export interface PpAmbulanceWlEditorCustomEvent<T> extends CustomEvent<T> {
@@ -80,6 +100,16 @@ declare global {
 }
 declare namespace LocalJSX {
     interface PpAmbulanceWlApp {
+        "ambulanceId"?: string;
+        /**
+         * @deprecated use camelCase instead. Support for dash-casing will be removed in Stencil v5.
+         */
+        "ambulance-id"?: string;
+        "apiBase"?: string;
+        /**
+         * @deprecated use camelCase instead. Support for dash-casing will be removed in Stencil v5.
+         */
+        "api-base"?: string;
         "basePath"?: string;
         /**
          * @deprecated use camelCase instead. Support for dash-casing will be removed in Stencil v5.
@@ -95,6 +125,16 @@ declare namespace LocalJSX {
         "onEditor-closed"?: (event: PpAmbulanceWlEditorCustomEvent<string>) => void;
     }
     interface PpAmbulanceWlList {
+        "ambulanceId"?: string;
+        /**
+         * @deprecated use camelCase instead. Support for dash-casing will be removed in Stencil v5.
+         */
+        "ambulance-id"?: string;
+        "apiBase"?: string;
+        /**
+         * @deprecated use camelCase instead. Support for dash-casing will be removed in Stencil v5.
+         */
+        "api-base"?: string;
         "onEntry-clicked"?: (event: PpAmbulanceWlListCustomEvent<string>) => void;
     }
     interface IntrinsicElements {
