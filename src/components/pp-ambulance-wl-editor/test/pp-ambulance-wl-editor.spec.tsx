@@ -3,7 +3,7 @@ import { PpAmbulanceWlEditor } from '../pp-ambulance-wl-editor';
 import fetchMock from 'jest-fetch-mock';
 import { Condition, WaitingListEntry } from '../../../api/ambulance-wl';
 
-describe('<pfx>-ambulance-wl-editor', () => {
+describe('pp-ambulance-wl-editor', () => {
   const sampleEntry: WaitingListEntry = {
     id: "entry-1",
     patientId: "p-1",
@@ -52,7 +52,7 @@ describe('<pfx>-ambulance-wl-editor', () => {
 
     const page = await newSpecPage({
       components: [PpAmbulanceWlEditor],
-      html: `<<pfx>-ambulance-wl-editor entry-id="test-entry" ambulance-id="test-ambulance" api-base="http://sample.test/api"></<pfx>-ambulance-wl-editor>`,
+      html: `<pp-ambulance-wl-editor entry-id="test-entry" ambulance-id="test-ambulance" api-base="http://sample.test/api"></pp-ambulance-wl-editor>`,
     });
 
     await delay(300);
@@ -71,7 +71,7 @@ describe('<pfx>-ambulance-wl-editor', () => {
 
     const page = await newSpecPage({
       components: [PpAmbulanceWlEditor],
-      html: `<<pfx>-ambulance-wl-editor entry-id="test-entry" ambulance-id="test-ambulance" api-base="http://sample.test/api"></<pfx>-ambulance-wl-editor>`,
+      html: `<pp-ambulance-wl-editor entry-id="test-entry" ambulance-id="test-ambulance" api-base="http://sample.test/api"></pp-ambulance-wl-editor>`,
     });
 
     await delay(300);
